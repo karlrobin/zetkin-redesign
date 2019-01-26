@@ -1,0 +1,47 @@
+//
+// UTILITIES / TYPE
+//-----------------------------------------------------------------------
+
+.u-h1 {
+  font-size: 1.75rem;
+
+  @media #{$medium} {
+    font-size: 3rem;
+    line-height: 1.25;
+  }
+}
+
+.u-h4 {
+  font-size: 1.125rem;
+  line-height: $base-line-height;
+
+  @media #{$medium} {
+    font-size: 1.375rem;
+  }
+}
+
+.u-text-nowrap {
+  white-space: nowrap;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-small {
+  &,
+  & p {
+    font-size: $small-font-size !important;
+  }
+
+  @media #{$medium} {
+    &,
+    & p {
+      font-size: $small-font-size-md !important;
+    }
+  }
+}
+
+.u-text-large {
+  font-size: 1.625rem;
+}

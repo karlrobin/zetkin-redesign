@@ -1,0 +1,22 @@
+//
+// COMPONENTS / FOOTER
+//-----------------------------------------------------------------------
+
+.c-footer {
+  margin-top: $space-huge;
+  padding-top: $space-huge;
+  padding-bottom: $space-huge;
+  background-color: $black;
+  color: $white;
+  text-align: center;
+
+  h1, h2, h3 {
+    color: $white;
+  }
+
+  @media #{$medium} {
+    margin-top: $space-huge-md * 1.5;
+    padding-top: $space-huge-md;
+    padding-bottom: $space-huge-md;
+  }
+}

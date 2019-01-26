@@ -1,0 +1,51 @@
+//
+// BASE / RESET
+//-----------------------------------------------------------------------
+
+* {
+  &,
+  &:before,
+  &:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: $body-bg-color;
+
+  * + * {
+    margin-top: $space-small;
+
+    @media #{$medium} {
+      margin-top: $space-small-md;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+
+  &[width],
+  &[height] {
+    max-width: none;
+  }
+}
+
+ul, ol, {
+  list-style: none;
+}
+
+svg {
+  g,
+  path,
+  polygon {
+    fill: inherit;
+  }
+}

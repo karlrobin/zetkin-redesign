@@ -1,0 +1,59 @@
+//
+// SETUP / VARIABLES
+//-----------------------------------------------------------------------
+
+// Colors
+// -------------------------
+
+$black:                     #152845;
+$white:                     #fff;
+$gray:                      #576479;
+$gray-light:                #e5e7eb;
+$gray-dark:                 #2c3d57;
+$blue:                      #0065ff;
+
+$body-bg-color:             $white;
+$fg-color:                  $gray-dark;
+$muted-fg-color:            $gray;
+$strong-fg-color:           $black;
+$button-fg-color:           $black;
+
+
+// Typography
+// -------------------------
+
+$font-regular:              "Helveteica Neue", Helvetica, sans-serif;
+
+$base-font-size:            1.125rem;
+$small-font-size:           1rem;
+$base-font-size-md:         1.375rem;
+$small-font-size-md:        1.25rem;
+$base-line-height:          1.425;
+$base-line-height-md:       1.5;
+
+
+// Spacing
+// -------------------------
+
+$space-base:                $base-font-size * $base-line-height;
+$space-tiny:                $space-base * 0.25;
+$space-xsmall:              $space-base * 0.5;
+$space-small:               $space-base * 0.75;
+$space-large:               $space-base * 1.5;
+$space-xlarge:              $space-base * 2;
+$space-huge:                $space-base * 4;
+
+$space-base-md:             $base-font-size-md * $base-line-height-md;
+$space-tiny-md:             $space-base-md * 0.25;
+$space-xsmall-md:           $space-base-md * 0.5;
+$space-small-md:            $space-base-md * 0.75;
+$space-large-md:            $space-base-md * 1.5;
+$space-xlarge-md:           $space-base-md * 2;
+$space-huge-md:             $space-base-md * 4;
+
+
+// Breakpoints
+// -------------------------
+
+$medium:                    "only screen and (min-width : 48rem)";
+$large:                     "only screen and (min-width : 60rem)";
