@@ -5,29 +5,34 @@
 // Colors
 // -------------------------
 
-$black:                     #152845;
+$black:                     #231f20;
 $white:                     #fff;
-$gray:                      #576479;
-$gray-light:                #e5e7eb;
-$gray-dark:                 #2c3d57;
-$blue:                      #0065ff;
+$gray-dark:                 #5a5758;
+$gray:                      #7b7979;
+$gray-light:                #efefef;
+$gray-lightest:             #f5f5f5;
+$red:                       #ee3236;
 
 $body-bg-color:             $white;
-$fg-color:                  $gray-dark;
+$fg-color:                  $black;
+$soft-fg-color:             $gray-dark;
 $muted-fg-color:            $gray;
 $strong-fg-color:           $black;
-$button-fg-color:           $black;
+$button-fg-color:           $red;
+$link-color:                $red;
+$link-highlight-color:      darken($red, 20%);
+$border-color:              $gray-light;
 
 
 // Typography
 // -------------------------
 
-$font-regular:              "Helveteica Neue", Helvetica, sans-serif;
+$font-regular:              "azo-sans-web", "Helveteica Neue", Helvetica, sans-serif;
 
 $base-font-size:            1.125rem;
 $small-font-size:           1rem;
-$base-font-size-md:         1.375rem;
-$small-font-size-md:        1.25rem;
+$base-font-size-md:         1.125rem;
+$small-font-size-md:        1rem;
 $base-line-height:          1.425;
 $base-line-height-md:       1.5;
 
@@ -50,6 +55,12 @@ $space-small-md:            $space-base-md * 0.75;
 $space-large-md:            $space-base-md * 1.5;
 $space-xlarge-md:           $space-base-md * 2;
 $space-huge-md:             $space-base-md * 4;
+
+
+// Z-index
+// -------------------------
+
+$dropdown-z:                1000;
 
 
 // Breakpoints

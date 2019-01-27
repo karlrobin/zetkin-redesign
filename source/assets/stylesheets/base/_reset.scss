@@ -17,15 +17,7 @@ html {
 }
 
 body {
-  background: $body-bg-color;
-
-  * + * {
-    margin-top: $space-small;
-
-    @media #{$medium} {
-      margin-top: $space-small-md;
-    }
-  }
+  background-color: $body-bg-color;
 }
 
 img {

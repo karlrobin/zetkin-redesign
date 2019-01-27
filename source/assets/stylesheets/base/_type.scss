@@ -19,7 +19,6 @@ body {
 
 strong {
   font-weight: bold;
-  color: $strong-fg-color;
 }
 
 
@@ -55,9 +54,6 @@ h2 {
 
 p {
 
-  @media #{$large} {
-    font-size: 1.625rem;
-  }
 }
 
 
@@ -65,11 +61,11 @@ p {
 // -------------------------
 
 a {
-  color: currentColor;
+  color: $link-color;
   font-weight: bold;
   text-decoration: underline;
 
   &:hover, &:focus {
-    text-decoration: none;
+    color: $link-highlight-color;
   }
 }
