@@ -1,0 +1,24 @@
+//
+// LAYOUT / TESTIMONIAL
+//-----------------------------------------------------------------------
+
+.testimonial {
+  display: flex;
+}
+
+.testimonial__headshot {
+  margin-right: $space-base-md;
+}
+
+.testmonial__quote {
+  font-size: 1.625rem;
+  font-weight: bold;
+}
+
+.testimonial__cite  {
+  display: block;
+  margin-top: $space-base-md;
+  font-size: 1.125rem;
+  font-weight: normal;
+  font-style: normal;
+}

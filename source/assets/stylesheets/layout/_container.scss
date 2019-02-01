@@ -2,17 +2,10 @@
 // LAYOUT / CONTAINER
 //-----------------------------------------------------------------------
 
-.l-container {
+.container {
+  max-width: 70rem;
   margin-left: auto;
   margin-right: auto;
-  max-width: 65rem;
-  padding: 0 $space-small;
-
-  @media #{$medium} {
-    padding: 0 $space-base-md;
-  }
-}
-
-.l-container--narrow {
-  max-width: 48rem;
+  padding-left: $space-base-md;
+  padding-right: $space-base-md;
 }
