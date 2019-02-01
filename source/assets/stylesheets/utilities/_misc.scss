@@ -1,0 +1,39 @@
+//
+// UTILITIES / MISC
+//-----------------------------------------------------------------------
+
+.u-dotted-bottom {
+  $height: 9px;
+  $width: 144px;
+
+  position: relative;
+  padding-bottom: calc(#{$space-base-md} + #{$height});
+
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: calc(50% - (#{$width} / 2));
+    background: image-url('dotted-break.svg') no-repeat;
+    width: $width;
+    height: $height;
+  }
+}
+
+.u-dotted-top {
+  $height: 9px;
+  $width: 144px;
+
+  position: relative;
+  padding-top: calc(#{$space-base-md} + #{$height});
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: calc(50% - (#{$width} / 2));
+    background: image-url('dotted-break.svg') no-repeat;
+    width: $width;
+    height: $height;
+  }
+}
