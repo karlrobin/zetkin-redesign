@@ -9,11 +9,11 @@
   margin-top: 0 !important;
 }
 
-.u-margin-left-tiny {
-  margin-left: $space-tiny !important;
+.u-margin-top-tiny {
+  margin-top: $space-tiny !important;
 
   @media #{$medium} {
-    margin-left: $space-tiny-md !important;
+    margin-top: $space-tiny-md !important;
   }
 }
 
@@ -62,5 +62,17 @@
 
   @media #{$medium} {
     margin-top: $space-huge-md !important;
+  }
+}
+
+
+// Bottom margin
+// -------------------------
+
+.u-margin-bottom-baseline {
+  margin-bottom: $space-base !important;
+
+  @media #{$medium} {
+    margin-bottom: $space-base-md !important;
   }
 }

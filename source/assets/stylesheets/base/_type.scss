@@ -26,26 +26,21 @@ strong {
 // -------------------------
 
 h1, h2, h3, h4 {
-  color: $strong-fg-color;
   font-weight: bold;
   line-height: 1.25;
+  margin-bottom: 1.25em;
 }
 
 h1 {
-  font-size: 1.675rem;
-
-  @media #{$medium} {
-    font-size: 3rem;
-    line-height: 1.25;
-  }
+  font-size: 3.375rem;
 }
 
 h2 {
-  font-size: 1.375rem;
+  font-size: 2.625rem;
+}
 
-  @media #{$medium} {
-    font-size: 2.375rem;
-  }
+h3 {
+  font-size: 1.75rem;
 }
 
 
@@ -53,7 +48,13 @@ h2 {
 // -------------------------
 
 p {
+  max-width: 60ch;
+  font-size: $large-font-size-md;
+  color: $soft-fg-color;
 
+  & + & {
+    margin-top: $space-base-md;
+  }
 }
 
 
