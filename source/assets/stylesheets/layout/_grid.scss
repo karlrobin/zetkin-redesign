@@ -1,0 +1,15 @@
+//
+// LAYOUT / GRID
+//-----------------------------------------------------------------------
+
+.grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: $space-xlarge-md;
+}
+
+.grid--3-columns {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: $space-base-md;
+}
