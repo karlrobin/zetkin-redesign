@@ -2,6 +2,36 @@
 // UTILITIES / MISC
 //-----------------------------------------------------------------------
 
+.u-pointer, .u-pointer-negative {
+  &:after {
+    content: '';
+    position: relative;
+    top: -2px;
+    left: 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 21px;
+    height: 18px;
+    margin-left: $space-tiny-md;
+    background: image-url('icon-pointer-red.svg') no-repeat;
+    transition: left 0.1s ease-out;
+  }
+
+  &:hover:after {
+    left: 3px;
+  }
+
+  &.button:hover:after {
+    background-image: image-url('icon-pointer-white.svg');
+  }
+}
+
+.u-pointer-negative {
+  &:after {
+    background-image: image-url('icon-pointer-white.svg');
+  }
+}
+
 .u-dotted-bottom {
   $height: 9px;
   $width: 144px;
