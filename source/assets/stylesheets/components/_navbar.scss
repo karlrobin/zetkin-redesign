@@ -39,6 +39,7 @@
 
 .navbar__logo {
   align-self: stretch;
+  flex-shrink: 0;
   display: flex;
 
   .navbar__link {
