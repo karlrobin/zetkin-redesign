@@ -17,11 +17,13 @@
     transition: left 0.1s ease-out;
   }
 
-  &:hover:after {
+  &:hover:after,
+  &:focus:after {
     left: 3px;
   }
 
-  &.button:hover:after {
+  &.button:hover:after,
+  &.button:focus:after {
     background-image: image-url('icon-pointer-white.svg');
   }
 }
@@ -66,4 +68,23 @@
     width: $width;
     height: $height;
   }
+}
+
+.u-text-mark {
+  display: inline;
+  position: relative;
+  z-index: 1;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+  background-image: linear-gradient(to bottom, transparent 1.05em, $red 1.05em, $red 1.2em, transparent 1.2em);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+
+  // Experiments with repeated SVG:
+
+  // background-image: image-url('mark-line.svg');
+  // background-size: 100% 1em * $base-line-height-md;
+  // background-position: 0 0.5em;
+  // background-repeat: repeat-y;
+  // padding-bottom: 0.5em;
 }
