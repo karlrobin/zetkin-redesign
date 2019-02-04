@@ -39,16 +39,23 @@
   $width: 144px;
 
   position: relative;
-  padding-bottom: calc(#{$space-base-md} + #{$height});
+  padding-bottom: calc(#{$space-large-md} + #{$height});
 
   &:after {
     position: absolute;
     content: '';
     bottom: 0;
-    left: calc(50% - (#{$width} / 2));
+    left: 0;
     background: image-url('dotted-break.svg') no-repeat;
     width: $width;
     height: $height;
+  }
+
+  &.u-text-center,
+  .u-text-center & {
+    &:after {
+      left: calc(50% - (#{$width} / 2));
+    }
   }
 }
 
@@ -57,16 +64,23 @@
   $width: 144px;
 
   position: relative;
-  padding-top: calc(#{$space-base-md} + #{$height});
+  padding-top: calc(#{$space-large-md} + #{$height});
 
   &:before {
     position: absolute;
     content: '';
     top: 0;
-    left: calc(50% - (#{$width} / 2));
+    left: 0;
     background: image-url('dotted-break.svg') no-repeat;
     width: $width;
     height: $height;
+  }
+
+  &.u-text-center,
+  .u-text-center & {
+    &:before {
+      left: calc(50% - (#{$width} / 2));
+    }
   }
 }
 

@@ -28,19 +28,23 @@ strong {
 h1, h2, h3, h4 {
   font-weight: bold;
   line-height: 1.25;
-  margin-bottom: 1.25em;
+  margin-bottom: $space-base-md;
+
+  * + & {
+    margin-top: $space-large-md;
+  }
 }
 
 h1 {
-  font-size: 3.375rem;
-}
-
-h2 {
   font-size: 2.625rem;
 }
 
-h3 {
+h2 {
   font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.375rem;
 }
 
 
@@ -52,7 +56,7 @@ p {
   font-size: $large-font-size-md;
   color: $soft-fg-color;
 
-  & + & {
+  * + & {
     margin-top: $space-base-md;
   }
 }

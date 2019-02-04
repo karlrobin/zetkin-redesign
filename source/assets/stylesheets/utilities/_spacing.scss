@@ -76,3 +76,27 @@
     margin-bottom: $space-base-md !important;
   }
 }
+
+.u-margin-bottom-large {
+  margin-bottom: $space-large !important;
+
+  @media #{$medium} {
+    margin-bottom: $space-large-md !important;
+  }
+}
+
+.u-margin-bottom-xlarge {
+  margin-bottom: $space-xlarge !important;
+
+  @media #{$medium} {
+    margin-bottom: $space-xlarge-md !important;
+  }
+}
+
+.u-margin-bottom-huge {
+  margin-bottom: $space-huge !important;
+
+  @media #{$medium} {
+    margin-bottom: $space-huge-md !important;
+  }
+}

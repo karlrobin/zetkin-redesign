@@ -9,15 +9,15 @@
 }
 
 .u-h1 {
-  font-size: 3.375rem;
-}
-
-.u-h2 {
   font-size: 2.625rem;
 }
 
-.u-h3 {
+.u-h2 {
   font-size: 1.75rem;
+}
+
+.u-h3 {
+  font-size: 1.375rem;
 }
 
 .u-text-nowrap {
@@ -26,6 +26,12 @@
 
 .u-text-center {
   text-align: center;
+}
+
+p.u-text-center,
+.u-text-center p {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .u-text-small {
