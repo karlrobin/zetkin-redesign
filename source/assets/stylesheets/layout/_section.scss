@@ -7,6 +7,11 @@
   padding-bottom: $space-huge-md;
 }
 
+.section--bordered {
+  border: solid $gray-lightest;
+  border-width: 2px 0;
+}
+
 .section--band {
   position: relative;
   background-color: $black;
@@ -36,6 +41,6 @@
     right: 0;
     bottom: 0;
     background-color: black;
-    opacity: 0.75;
+    opacity: 0.8;
   }
 }
