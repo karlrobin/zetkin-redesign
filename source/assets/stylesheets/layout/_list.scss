@@ -2,9 +2,27 @@
 // LAYOUT / LIST
 //-----------------------------------------------------------------------
 
-.l-list {
+.list {
 
   > * + * {
-    margin-top: $space-xsmall;
+    margin-top: $space-xsmall-md;
+  }
+}
+
+.list--inline {
+  display: flex;
+
+  > * + * {
+    margin-top: 0;
+    margin-left: $space-xsmall-md;
+  }
+
+  .list__divider {
+
+    &:before {
+      display: inline-block;
+      content: '|';
+      margin-right: $space-xsmall-md;
+    }
   }
 }

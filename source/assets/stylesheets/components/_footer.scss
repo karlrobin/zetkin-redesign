@@ -2,21 +2,42 @@
 // COMPONENTS / FOOTER
 //-----------------------------------------------------------------------
 
-.c-footer {
-  margin-top: $space-huge;
-  padding-top: $space-huge;
-  padding-bottom: $space-huge;
-  background-color: $black;
-  color: $white;
-  text-align: center;
+.footer {
+  padding-top: $space-huge-md;
+  padding-bottom: $space-huge-md;
+  background-color: $gray-lightest;
+  color: $soft-fg-color;
+  font-size: $small-font-size-md;
+  display: flex;
 
-  h1, h2, h3 {
-    color: $white;
+  a {
+    color: $soft-fg-color;
+    font-weight: normal;
+
+    &:hover, &:focus {
+      color: $fg-color;
+    }
   }
 
-  @media #{$medium} {
-    margin-top: $space-huge-md * 1.5;
-    padding-top: $space-huge-md;
-    padding-bottom: $space-huge-md;
+  p {
+    font-size: $small-font-size-md;
   }
+
+  .container {
+    flex: 1;
+  }
+}
+
+.footer__logo {
+  margin-right: $space-xlarge-md;
+  flex-shrink: 0;
+
+  img {
+    width: 46px;
+    height: auto;
+  }
+}
+
+.footer__body {
+  flex: 1;
 }
